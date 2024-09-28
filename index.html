@@ -23,14 +23,16 @@
             <h1>Despacito</h1>
             <p>Luis Fonsi ft. Daddy Yankee</p>
 
-            <audio controls>
+            <!-- <audio controls id="song"> -->
+            <audio id="song">
                 <source src="media/Despacito.m4a" type="audio/mpeg">
             </audio>
+
             <input type="range" value="0" id="progress">
 
             <div class="controls">
                 <div><i class="fa-solid fa-backward"></i></div>
-                <div><i class="fa-solid fa-play"></i></div>
+                <div onclick="playpause()"><i class="fa-solid fa-play" id="controlIcon"></i></div>
                 <div><i class="fa-solid fa-forward"></i></div>
             </div>
         </div>
